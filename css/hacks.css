@@ -1,0 +1,17 @@
+/*HACKS---LOGO.css-----------------------------------------------------------------------------------------------*/
+/*Safari 6.1-7.0*/
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0) { .text-container {(;margin-top: 6.5%; margin-right:3%;);} }/*logo text aligned differently on ipad mini - ios9*/
+/* iPhone / mobile webkit */
+@media screen and (max-device-width: 650px) {
+ .text-container { margin-top: 6.5%; margin-right:3%;  }/*Same issues as safari for chrome mobile*/
+/*HACKS--------------------------------------------------------------------------------------------------*/
+    
+ /*HACKS------STYLES.css-------TYPOGRAPHY ALIGNMENT-----SVG-&-FIXED_BACKGROUND------------------------------------------------------------------------------*/
+ /*Safari ios 6.1-7.0*/
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0) { body {(;background-attachment: scroll;background: url('/images/Nook-Logo-Square-V3-GREY-100px.jpg'););} }/*no background-image: svg, no background: fixed - ios9*/
+/* iPhone / mobile webkit */
+@media screen and (max-device-width: 650px) {
+ body { background-attachment: scroll;background: url('/images/Nook-Logo-Square-V3-GREY-100px.jpg');  }/*Same issues as safari for chrome mobile*/
+}
+
+/*HACKS--------------------------------------------------------------------------------------------------*/
