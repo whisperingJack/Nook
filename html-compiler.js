@@ -1,0 +1,1 @@
+html-compiler --rootFolder=foldername --siteRoot=http://localhost:8000/dist

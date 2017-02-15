@@ -8,7 +8,9 @@
 }
  .navigation li {margin-left: 0px;padding: 0px;}/*Remove Browser Agent Indent*/
 
-.nav-button a{padding: 5px 10px;display: block; text-decoration: none;color: white;box-shadow: 0px 3px 5px #888888;font-family: 'Roboto','Arial';border-radius: 5px;background-color: #9b9c9d;}
+.nav-button a, .nav-ph-button-working{padding: 5px 10px;display: block; text-decoration: none;color: white;box-shadow: 0px 3px 5px #888888;font-family: 'Roboto','Arial';border-radius: 5px;background-color: #9b9c9d;}
+
+.nav-ph-button-working{box-shadow: none;height: 30px;padding-top:  -top: 5px}
 
 .nav-button{ display:inline-block;}
 
@@ -17,8 +19,9 @@
 /* /////////// small - Medium  Devices, Phones///320px/////////////////////////////// */
 /* /////////// Small - Medium  Devices, Phones///320px/////////////////////////////// */
 /* /////////// Small - Medium  Devices, Phones///320px/////////////////////////////// */
-@media only screen and (min-width : 320px) {  
-
+@media only screen and (min-width : 320px) {
+     /*disable clicking on ph link*/
+    .nav-ph-button-working{display:none}
     .navigation-box {text-align: center;}
     
     .nav-button{ width: 40%;text-align: center;margin:10px}
@@ -27,10 +30,12 @@
 /* /////////// Small - Medium  Devices, Phones///600px/////////////////////////////// */
 /* /////////// Small - Medium  Devices, Phones///600px/////////////////////////////// */
 
-@media only screen and (min-width : 600px) { 
+@media only screen and (min-width : 768px) { 
+    /*disable clicking on ph link*/
+    .nav-ph-button-working{display:inline-block;}
+    .nav-ph-button-disabled{display:none}
     
     .nav-button{margin-bottom: 10px;margin-top: 20px}
-    
     .navigation-box {text-align: justify;}
 
 }

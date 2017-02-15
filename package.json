@@ -1,0 +1,74 @@
+{
+  "name": "nook",
+  "version": "1.0.0",
+  "description": "Task Runner",
+  "scripts": {
+   
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "index": "htmlmin -o dist/index.php index.php",
+    "navigation": "htmlmin -o dist/includes/navigation.min.php includes/navigation.php",
+    "logo": "htmlmin -o dist/includes/logo.min.php includes/logo.php",
+    "footer": "htmlmin -o dist/includes/footer.min.php includes/footer.php",
+    "form": "htmlmin -o dist/includes/form.min.php includes/form.php",
+    "lint-html": "node html-lint.js",
+    "lint-js": "eslint js/*.js",
+    "minify-scss": "node-sass --output-style compressed -o dist/css/min scss",
+    "minify-html": "npm run index && npm run navigation && npm run logo && npm run footer && npm run form",
+    "minify-js": "uglifyjs js/*.js -m -o dist/js/js.js",
+    "minify-images": "imagemin images/* -o dist/images/",
+    "minify-icons": "svgo images/icons/svg/ -o dist/images/icons/svg",
+    "compress-images":"npm run minify-images && npm run minify-icons",
+    "concat-css": "node concat-css.js",
+    "autoprefixer": "postcss -u autoprefixer -r scss/*.scss",
+    "server-sync": "browse'r-sync start --proxy http://localhost --files *.html, js/*.js, css/*.css",
+    "build:css": "npm run autoprefixer && npm run minify-scss && npm run concat-css ",
+    "build:js": "npm run minify-js",
+    "build:html": "npm run lint-html && npm run minify-html",
+    "watch:css": "onchange scss -- npm run build:scss",
+    "build:site":"npm run build:html && npm run build:css && npm run build:js && npm run compress-images",
+    "watch:js": "onchange js -- npm run build:js",
+    "watch:html": "onchange *.html -- npm run index-lint && onchange includes/*.html -- npm run content-lint",
+    "watch:images": "onchange images -- npm run build:images",
+    "watch:all": "npm-run-all -p serve watch:scss watch:js watch:images watch:html",
+    "build:all": "npm-run-all -p serve build:scss build:js build:html",
+    "postinstall": "npm run build:all && npm run watch:all"
+  },
+  "author": "Nook Digital Marketing",
+  "license": "UNLICENCED",
+  "devDependencies": {
+    "autoprefixer": "^6.5.0",
+    "browser-sync": "^2.17.2",
+    "buildify": "^0.4.0",
+    "concatenate-files": "^0.1.1",
+    "eslint": "^3.7.1",
+    "eslint-config-google": "^0.6.0",
+    "glob": "^7.1.1",
+    "glob-html": "^0.2.5",
+    "hashmark": "^4.1.0",
+    "htmlmin": "0.0.7",
+    "imagemin-cli": "^3.0.0",
+    "node-sass": "^3.10.1",
+    "onchange": "^3.0.2",
+    "parallelshell": "^2.0.0",
+    "postcss-cli": "^2.6.0",
+    "svg-sprite-generator": "0.0.7",
+    "svgo": "^0.7.1",
+    "uglify-js": "^2.7.3",
+    "yargs": "^6.0.0"
+  },
+  "dependencies": {
+      "html-compiler.js": "latest",
+      "concat-css.js": "latest",
+      "concat-css.js": "latest",
+      "html-lint.js": "latest",
+      "concatenate-files": "^0.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whisperingJack/NookDigitalMarketing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/whisperingJack/NookDigitalMarketing/issues"
+  },
+  "homepage": "https://github.com/whisperingJack/NookDigitalMarketing#readme"
+}
