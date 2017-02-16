@@ -1,5 +1,23 @@
+
+header {
+  position: relative;
+  background-image: -moz-linear-gradient(top, #b7e5fa 0%, #90c0e5 100%); /* FF3.6-15 */
+    background-image: -webkit-linear-gradient(top, #b7e5fa 0%,#90c0e5 100%); /* Chrome10-25,Safari5.1-6 */
+    background-image: linear-gradient(to bottom, #b7e5fa 0%,#90c0e5 100%);;
+    padding-top:5px
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+
 /*Navigation -------------------------------------------------------------------------------------------------*/
-.navigation-box {width: 100%;padding: 0;margin: auto}
+.navigation-box {width: 100%;padding: 20px;margin: 40px auto 0 auto}
 
 .navigation-box:after {
     content: '';

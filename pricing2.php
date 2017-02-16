@@ -18,7 +18,7 @@
 	<link rel="icon" href="favicon.ico"/>
 	
 	<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<!-- Icons -->
     
 	<!-- jQuery -->
@@ -26,8 +26,10 @@
     
 	<!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-        
-    <link rel="stylesheet" type="text/css" href="css/logo_styles.css" />
+       
+     <link rel="stylesheet" type="text/css" href="css/aspect-ratio.css" />   
+          
+    <link rel="stylesheet" type="text/css" href="css/logo_styles_aspect_ratio.css" />
     
     <link rel="stylesheet" type="text/css" href="css/form.css" />
     
@@ -130,32 +132,34 @@
         </div>
         </div>
 
-         
-    </div>
+          
+  <!--<h2 class="slogan">- Increasing your company's visibility online -</h2>-->
+    </div>  
 </div>		
-
     </section>  
-        
-    <h2 class="slogan">- Increasing your company's visibility online -</h2>
+ <!-- <div class="header-background">
+         <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <polygon fill="#9b9c9d" points="0,100 100,0 100,100"/>
+  </svg>
+   </div>   -->   
+   
     
      
     
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    <polygon fill="white" fill-opacity="0.4" points="0,100 100,0 100,100"/>
-  </svg>
-   
+
     </header>
     <nav class="navigation">
         <?php include ('includes/navigation-pricing.php'); ?>
     </nav>
     <section class="list-heading services">
+                
          <h2>Our Digital Marketing Services</h2>
         <div>
         
         <ol>
             <li>Web Development (Custom or Framework based)</li>
             <li>Targeted Content Writing</li>
-            <li>Montly SEO and site maintenance</li>
+            <li>Monthly SEO and site maintenance</li>
             <li>Fast and secure hosting</li>
             <li>Call Tracking</li>
             <li>Code and content optimisation.</li>
@@ -165,11 +169,12 @@
         </div>
         
        
-        <div class="content-box">
+        <!--<div class="content-box">
             <h2 class="company-mission">Company Mission:</h2>
             <p><small>Provide customer leads (phone calls / emails) to business by improving websites and providing targeted content to develop a strong basis for competitive ranking in Google search engine (SERP)</small></p>
-        </div>
-        
+        </div>-->
+       </section>
+       <section class="list-heading services">  
          <h3 class="list-heading">Our Method</h3>
         <ol>
             <li>Optimise website code for high performance (HTML, CSS, Javascript).</li>
@@ -269,7 +274,8 @@
 
             <li>Parallax effect</li>
             
-        </ul>         
+        </ul> 
+                
 </section> 
  
   <section class="phone-number"></section>
