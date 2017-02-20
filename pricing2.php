@@ -18,18 +18,16 @@
 	<link rel="icon" href="favicon.ico"/>
 	
 	<!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<!-- Icons -->
     
 	<!-- jQuery -->
     <script defer src="js/jquery/jquery.min.js"></script>
     
 	<!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-       
-     <link rel="stylesheet" type="text/css" href="css/aspect-ratio.css" />   
-          
-    <link rel="stylesheet" type="text/css" href="css/logo_styles_aspect_ratio.css" />
+    <link rel="stylesheet" type="text/css" href="css/pricing-styles.css" />
+        
+    <link rel="stylesheet" type="text/css" href="css/logo_styles.css" />
     
     <link rel="stylesheet" type="text/css" href="css/form.css" />
     

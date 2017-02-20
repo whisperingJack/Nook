@@ -1,106 +1,72 @@
+
+
+
+
 @font-face {
   font-family: 'nook';
-  src: url("/fonts/nook.woff") format("woff"); }
-* {
-  box-sizing: border-box;
-  text-rendering: optimizeLegibility; }
+    src:  url('/fonts/nook.woff') format('woff');}
 
-.logo-container {
-  position: relative;
-  margin: auto; }
+*  {box-sizing: border-box;text-rendering: optimizeLegibility;}
 
-.logo-container > div {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; }
+.logo-container{position: relative;margin: auto;}
 
-.text-container {
-  position: relative;
-  text-align: right;
-  z-index: 6;
-  font-size: 2.3vw;
-  font-family: 'nook';
-  color: #d1d3d4; }
+.logo-container > div{position: absolute;top:0;bottom: 0;left: 0;right: 0;}
 
-.logo-text {
-  font-size: 10em; }
 
-.box-container {
-  position: absolute;
-  left: 4%;
-  top: 0;
-  width: 38%;
-  height: 80%; }
+.text-container{position: relative;text-align: right; z-index: 6;font-size:2.3vw;font-family: 'nook';color: #d1d3d4;}
 
-.box-1 {
-  position: relative;
-  height: 80%;
-  width: 80%;
-  border-radius: 2vw;
-  background-color: #5bcbf5;
-  top: 28%;
-  left: 28%;
-  overflow: hidden;
-  z-index: 3; }
+.logo-text {font-size: 10em;}
 
-.box-2 {
-  position: relative;
-  height: 85%;
-  width: 85%;
-  border-radius: 2vw;
-  background-color: #b7e5fa;
-  top: 16%;
-  left: 16%;
-  overflow: hidden;
-  z-index: 2; }
+.box-container {position: absolute;left:4%;top:0;width: 38%;height: 80%;}
 
-.box-3 {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  border-radius: 2vw;
-  background-color: #5bcbf5;
-  overflow: hidden;
-  z-index: 1; }
+.box-1 {position: relative;height: 80%; width: 80%; border-radius: 2vw; background-color: #5bcbf5; top: 28%;left: 28%;overflow: hidden; z-index: 3;}
 
-.tag-line h1 {
-  color: white;
-  font-size: 1.4em;
-  font-family: 'nook';
-  font-weight: 100;
-  letter-spacing: 4px;
-  text-align: right;
-  margin-top: -11%; }
+.box-2 {position: relative;height: 85%; width: 85%;border-radius: 2vw; background-color: #b7e5fa; top: 16%;left: 16%; overflow: hidden;z-index: 2 }
+
+.box-3 {position: relative; height: 100%; width: 100%;border-radius: 2vw; background-color: #5bcbf5;overflow: hidden;z-index: 1}
+
+.tag-line h1{
+    color: white;
+    font-size: 1.4em;
+    font-family: 'nook';
+    font-weight:100;
+    letter-spacing: 4px;   
+    text-align: right;
+    margin-top: -11%;  
+}
 
 /* /////////// Medium  Devices, Phones///425px/////////////////////////////// */
 /* /////////// Medium  Devices, Phones///425px/////////////////////////////// */
 /* /////////// Medium  Devices, Phones///425px/////////////////////////////// */
-@media only screen and (min-width: 320px) {
-  .logo-container {
-    width: 60.5%;
-    padding-bottom: 31.5%; }
+@media only screen and (min-width : 320px) {
+    .logo-container{width: 60.5%;padding-bottom: 31.5%;}
+    .ook {letter-spacing: -5px;}
+}
 
-  .ook {
-    letter-spacing: -5px; } }
 /* /////////// Medium  Devices, Phones///768px/////////////////////////////// */
 /* /////////// Medium  Devices, Phones///768px/////////////////////////////// */
 /* /////////// Medium  Devices, Phones///768px/////////////////////////////// */
-@media only screen and (min-width: 768px) {
-  .logo-container {
-    width: 78%;
-    padding-bottom: 39%; }
+@media only screen and (min-width : 768px) {
+    .logo-container{width:68%;padding-bottom: 35%;}
+    .ook {letter-spacing: -6px;}
+}
 
-  .ook {
-    letter-spacing: -6px; } }
-/* /////////// Large  Devices, Phones///1200px+ /////////////////////////////// */
-/* /////////// Large  Devices, Phones///1200px+ /////////////////////////////// */
-/* /////////// Large  Devices, Phones///1200px+ /////////////////////////////// */
-@media only screen and (min-width: 1200px) {
-  .logo-container {
-    width: 100%;
-    padding-bottom: 54%; }
 
-  .ook {
-    letter-spacing: -18px; } }
+/* /////////// Large  Devices, Phones///1200px+ /////////////////////////////// */
+/* /////////// Large  Devices, Phones///1200px+ /////////////////////////////// */
+/* /////////// Large  Devices, Phones///1200px+ /////////////////////////////// */
+@media only screen and (min-width :1200px) {
+   .logo-container{width:100%;padding-bottom: 54%;}
+    .ook {letter-spacing: -18px;}
+}
+
+
+/*HACKS--------------------------------------------------------------------------------------------------*/
+ /*Safari 6.1-7.0*/
+
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0) { .text-container {(;margin-top: 6.5%; margin-right:3%;);} }/*logo text aligned differently on ipad mini - ios9*/
+/* iPhone / mobile webkit */
+@media screen and (max-device-width: 650px) {
+ .text-container { margin-top: 6.5%; margin-right:3%;  }/*Same issues as safari for chrome mobile*/
+/*HACKS--------------------------------------------------------------------------------------------------*/
+    
